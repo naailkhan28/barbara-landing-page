@@ -3,14 +3,14 @@
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Beaker, BarChart, Brain, TestTube, Microscope, Zap } from 'lucide-react'
+import { Beaker, TestTube, PoundSterling, Dna, Calendar1, Microscope, PieChart } from 'lucide-react'
 
 export function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="px-4 lg:px-6 h-14 flex items-center">
         <Link className="flex items-center justify-center" href="#">
-          <Brain className="h-6 w-6 mr-2" />
+          <TestTube className="h-6 w-6 mr-2" />
           <span className="font-bold">Barbara</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -34,7 +34,7 @@ export function LandingPage() {
                   Meet Barbara: Your AI Lab Assistant
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Barbara is an advanced AI agent designed to revolutionize your laboratory processes. She streamlines data analysis, enhances experiment tracking, and accelerates discoveries with cutting-edge lab informatics capabilities.
+                  Barbara is an advanced AI agent who helps you design, plan, and run experiments. She'll take care of all the boring stuff, and let you focus on making new discoveries.
                 </p>
               </div>
               <div className="space-x-4">
@@ -55,34 +55,12 @@ export function LandingPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center">
-                    <Brain className="w-6 h-6 mr-2" />
-                    AI-Driven Analysis
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  Leverage machine learning algorithms to analyze complex datasets and uncover hidden insights.
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center">
                     <TestTube className="w-6 h-6 mr-2" />
                     Experiment Tracking
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  Easily track and manage experiments, protocols, and results in one centralized platform.
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center">
-                    <BarChart className="w-6 h-6 mr-2" />
-                    Advanced Reporting
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  Generate comprehensive reports and visualizations with just a few clicks.
+                Easily plan complex experiments and manage protocols.
                 </CardContent>
               </Card>
               <Card>
@@ -93,29 +71,51 @@ export function LandingPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  Keep track of reagents, samples, and equipment with our intelligent inventory system.
+                  Keep track of reagents, samples, and equipment.
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center">
-                    <Zap className="w-6 h-6 mr-2" />
-                    Workflow Automation
+                    <PoundSterling className="w-6 h-6 mr-2" />
+                    Rapid Procurement
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  Automate repetitive tasks and streamline your lab processes for maximum efficiency.
+                  Quickly find the cheapest prices for lab reagents and consumables.
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center">
-                    <Microscope className="w-6 h-6 mr-2" />
-                    Instrument Integration
+                    <Dna className="w-6 h-6 mr-2" />
+                    DNA Design
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  Seamlessly integrate with your lab instruments for real-time data collection and analysis.
+                  Automatically fetch, design, and order synthetic DNA sequences for your experiments.
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center">
+                    <PieChart className="w-6 h-6 mr-2" />
+                    Data Visualization
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  Generate pretty data visualizations for your experiments and DNA designs.
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center">
+                    <Calendar1 className="w-6 h-6 mr-2" />
+                    Task Management
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  Seamlessly integrate with your calendar and to-do lists to stay organized.
                 </CardContent>
               </Card>
             </div>
@@ -129,7 +129,7 @@ export function LandingPage() {
                   Ready to Transform Your Lab?
                 </h2>
                 <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Join the future of lab informatics today and experience the power of AI in your research.
+                  Experience the power of AI in your research and let Barbara streamline your biology experiments.
                 </p>
               </div>
               <div className="space-x-4">
