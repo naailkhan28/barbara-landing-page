@@ -38,7 +38,9 @@ export function LandingPage() {
                 </p>
               </div>
               <div className="space-x-4">
+                <Link href="http://localhost:8501">
                 <Button>Get Started</Button>
+                </Link>
                 <Button variant="outline">Learn More</Button>
               </div>
             </div>
